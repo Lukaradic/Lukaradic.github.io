@@ -1,0 +1,110 @@
+
+
+#projects__section {
+    padding: 50px 0px 100px 0;
+    z-index: 100;
+    margin-bottom: 320px;
+    background-color: white;
+    .container {
+        .heading__main {
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-align: center;
+            margin-bottom: 150px;
+            @include for-phone-only {
+                margin-bottom: 50px;
+            }
+        }
+        .porojects__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+        }
+
+    }
+}
+
+@media (min-width: 576px) {
+    #projects__section {
+        padding: 50px 0px 200px 0px;
+        z-index: 100;
+        margin-bottom: 320px;
+        background-color: white;
+        .container {
+            .heading__main {
+                margin-bottom: 50px;
+            }
+    
+        }
+    }
+}
+$padding-left-info: 25px;
+$padding-left-info-phone: 10px;
+
+
+.project__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 350px;
+  height: 300px;
+  background-color: white;
+  margin: 0 auto;
+  // background-color: $card-blue;
+  // color: white;
+  padding: 35px 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px 1px rgba($color: black, $alpha: .3);
+  transition: all .2s ease;
+  .title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    li {
+      background-color: #eeeeee;
+      padding: 5px;
+      border-radius: 15px;
+      &:not(:last-child){
+        margin-right: 15px;
+      }
+      @include for-phone-only {
+        font-size: 12px;
+      }
+    }
+    
+  }
+  .description {
+    line-height: 150%;
+    color: #9E9E9E;
+    font-size: 14px;
+  }
+  .link {
+
+    display: block;
+    background-color: $main-blue;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 15px;
+    max-width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      background-color: $main-blue-dark;
+    }
+
+  }
+}

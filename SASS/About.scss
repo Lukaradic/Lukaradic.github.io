@@ -1,0 +1,50 @@
+
+#about {
+    width: 100%;
+    min-height: 500px;
+    background-color: $about-background;
+    padding: 200px 0px 200px 0px;
+    box-sizing: content-box;
+    z-index: 100;
+    @include for-phone-only {
+        padding: 50px 0px;
+    }
+    @include for-tablet-portrait-up {
+        padding: 50px 0px;
+    }
+    .container {
+        .heading {
+            @include heading;
+            margin-bottom: 50px;
+            &__experience {
+                justify-content: flex-end;
+            }
+        }
+        p {
+            line-height: 150%;
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+            @include for-phone-only {
+                font-size: 14px;
+            }
+        }
+        .experience__list {
+            list-style-type: disc;
+            padding-left: 15px;
+            padding-right: 15px;
+            .cubes__item {
+                h3  {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid #232323;
+                    display: inline-block;
+                    padding-bottom: 5px;
+                    @include for-phone-only {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

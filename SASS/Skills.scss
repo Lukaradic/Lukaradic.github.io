@@ -1,0 +1,67 @@
+
+#skills {
+    margin-top: 50px;
+    .heading-sub {
+        @include heading;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .wrapper {
+        margin-top: 50px;
+        display: grid;
+        
+        @include for-phone-only {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 25px;
+        }
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 25px;
+        }
+        @include for-desktop-up {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 50px;
+        }
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+        .icon__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid $main-blue;
+            padding: 15px 0px;
+            box-sizing: border-box;
+            position: relative;
+            
+            & > span {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .fab {
+                font-size: 72px;
+                margin: 0 auto;
+                display: inline-block;
+                color: #232323;
+            }
+            .fa-react {
+                -webkit-animation: spin 10s infinite linear;
+                -moz-animation: spin 10s infinite linear;
+                animation: spin  10s infinite linear;
+            }
+        }
+    }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}   
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
