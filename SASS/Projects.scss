@@ -1,9 +1,9 @@
 
 
 #projects__section {
-    padding: 50px 0px 100px 0;
+    padding: 150px 0;
     z-index: 100;
-    margin-bottom: 320px;
+    // margin-bottom: 320px;
     background-color: white;
     .container {
         .heading__main {
@@ -27,9 +27,7 @@
 
 @media (min-width: 576px) {
     #projects__section {
-        padding: 50px 0px 200px 0px;
         z-index: 100;
-        margin-bottom: 320px;
         background-color: white;
         .container {
             .heading__main {
@@ -76,6 +74,7 @@ $padding-left-info-phone: 10px;
       background-color: #eeeeee;
       padding: 5px;
       border-radius: 15px;
+      margin-bottom: 10px;
       &:not(:last-child){
         margin-right: 15px;
       }

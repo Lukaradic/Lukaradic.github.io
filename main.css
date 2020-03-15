@@ -281,9 +281,8 @@ header .container nav ul li a:hover {
   }
 }
 #projects__section {
-  padding: 50px 0px 100px 0;
+  padding: 150px 0;
   z-index: 100;
-  margin-bottom: 320px;
   background-color: white;
 }
 #projects__section .container .heading__main {
@@ -306,9 +305,7 @@ header .container nav ul li a:hover {
 
 @media (min-width: 576px) {
   #projects__section {
-    padding: 50px 0px 200px 0px;
     z-index: 100;
-    margin-bottom: 320px;
     background-color: white;
   }
   #projects__section .container .heading__main {
@@ -346,6 +343,7 @@ header .container nav ul li a:hover {
   background-color: #eeeeee;
   padding: 5px;
   border-radius: 15px;
+  margin-bottom: 10px;
 }
 .project__container ul li:not(:last-child) {
   margin-right: 15px;
@@ -374,6 +372,61 @@ header .container nav ul li a:hover {
 }
 .project__container .link:hover {
   background-color: #00679B;
+}
+
+footer {
+  background-color: #00679B;
+  color: #FFFFFF;
+  width: 100%;
+}
+footer .container {
+  padding: 25px 15px;
+}
+footer .container h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+footer .container .social__media {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+footer .container .social__media a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+footer .container .social__media a i {
+  font-size: 22px;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+footer .container .social__media a:hover i {
+  transform: scale(1.2);
+}
+footer .container .social__media .fab {
+  margin-right: 15px;
+}
+footer .container .contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+footer .container .contact__info span {
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-align: left;
+}
+footer .container .contact__info span .fas {
+  font-size: 22px;
+  margin-right: 10px;
+}
+footer .container .contact__info span:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/

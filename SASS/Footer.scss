@@ -1,0 +1,56 @@
+// @import "../../SCSS/Variables.scss";
+footer {
+    background-color: $main-blue-dark;
+    color: $main-white;
+    width: 100%;
+    .container {
+        padding: 25px 15px;
+        h4 {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: $main-white;
+        }
+        .social__media {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            // font-size: 24px;
+            margin-bottom: 25px;
+            a {
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+                i {
+                    font-size:  22px; //$footer-icons-desktop;
+                    transition: all .2s ease;
+                    overflow: hidden;
+                }
+                &:hover i {
+                    transform: scale(1.2);
+                }
+            }
+            .fab {
+                margin-right: 15px;
+            }
+        }
+        .contact__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            span {
+                letter-spacing: 1px;
+                font-size: $footer-fontSize-desktop;
+                .fas {
+                    font-size: $footer-icons-desktop;
+                    margin-right: 10px;
+                }
+                text-align: left;
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
