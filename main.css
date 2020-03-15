@@ -85,11 +85,9 @@ header .container nav ul li:not(:last-child) {
   margin-bottom: 15px;
 }
 @media (min-width: 1200px) {
-  header .container nav ul li {
-    margin-bottom: 0;
-  }
   header .container nav ul li:not(:last-child) {
     margin-right: 15px;
+    margin-bottom: 0;
   }
 }
 header .container nav ul li a {
@@ -302,6 +300,11 @@ header .container nav ul li a:hover {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 50px;
 }
+@media (max-width: 599px) {
+  #projects__section .container .porojects__container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
 
 @media (min-width: 576px) {
   #projects__section {
@@ -457,6 +460,10 @@ footer .container .contact__info span:not(:last-child) {
 }
 .App {
   font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html, body, div, span, applet, object, iframe,
